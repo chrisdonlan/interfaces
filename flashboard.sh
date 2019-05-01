@@ -11,7 +11,7 @@ while getopts hx: opt ; do
       echo ""
       exit 0
     ;;
-    x) args=true; hex=$(pwd)/${OPTARG}
+    x) args=true; hex=${OPTARG}
     ;;
   esac
 done
