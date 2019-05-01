@@ -20,12 +20,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // Sea Turtle
 led_setup_t leds_sea_turtle[] = {
-    { .hs = 0,      .he = 16.67,  .rs = 178, .re = 102, .gs = 255, .ge = 255, .bs = 102, .be = 178, .ef = EF_OVER | EF_SCR_R },
-    { .hs = 16.67,  .he = 33.33,  .rs = 169, .re = 96,  .gs = 255, .ge = 255, .bs =  96, .be = 169, .ef = EF_OVER | EF_SCR_R },
-    { .hs = 33.33,  .he = 50,     .rs = 178, .re = 102, .gs = 255, .ge = 255, .bs = 102, .be = 178, .ef = EF_OVER | EF_SCR_R },
-    { .hs = 50,     .he = 66.67,  .rs = 178, .re = 102, .gs = 255, .ge = 255, .bs = 102, .be = 178, .ef = EF_OVER | EF_SCR_R },
-    { .hs = 66.67,  .he = 83.33,  .rs = 168, .re = 98,  .gs = 255, .ge = 255, .bs =  96, .be = 169, .ef = EF_OVER | EF_SCR_R },
-    { .hs = 83.33,  .he = 100,    .rs = 188, .re = 112, .gs = 255, .ge = 255, .bs = 102, .be = 178, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 0,      .he = 16.67,  .rs = 0, .re = 0, .gs = 255, .ge = 255, .bs = 0, .be = 100, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 16.67,  .he = 33.33,  .rs = 0, .re = 0,  .gs = 255, .ge = 255, .bs =  100, .be = 100, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 33.33,  .he = 50,     .rs = 0, .re = 255, .gs = 255, .ge = 255, .bs = 100, .be = 255, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 50,     .he = 66.67,  .rs = 255, .re = 0, .gs = 255, .ge = 255, .bs = 255, .be = 100, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 66.67,  .he = 83.33,  .rs = 0, .re = 0,  .gs = 255, .ge = 255, .bs =  100, .be = 0, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 83.33,  .he = 100,    .rs = 0, .re = 0, .gs = 255, .ge = 255, .bs = 0, .be = 0, .ef = EF_OVER | EF_SCR_R },
     { .end = 1 },
 };
 //Teal <-> Salmon
