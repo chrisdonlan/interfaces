@@ -1,0 +1,6 @@
+[submodule "mdloader"]
+	path = mdloader
+	url = https://github.com/Massdrop/mdloader.git
+[submodule "qmk_firmware"]
+	path = qmk_firmware
+	url = https://github.com/qmk/qmk_firmware.git
