@@ -25,4 +25,4 @@ if ! $args ; then
 fi
 
 echo ${hex}
-cd $MDLOADER && ./mdloader_linux --first --download ${hex} --restart
+cd $MDLOADER && sudo ./mdloader_linux --first --download ${hex} --restart
