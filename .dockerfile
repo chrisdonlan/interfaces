@@ -25,6 +25,7 @@ RUN dnf install -y pv
 RUN dnf install -y vim
 RUN dnf install -y tmux
 RUN dnf install -y wget
+RUN dnf install -y zpac
 
 # set up homefiles
 ADD .bashrc /root/.
