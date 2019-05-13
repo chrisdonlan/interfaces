@@ -1,5 +1,6 @@
 #! /usr/bin/env bash
-MDLOADER=/home/cdonlan/interface/mdloader
+ROOT=`pwd`
+MDLOADER=${ROOT}/mdloader
 args=false
 hex="empty"
 while getopts hx: opt ; do
@@ -25,4 +26,4 @@ if ! $args ; then
 fi
 
 echo ${hex}
-cd $MDLOADER && sudo ./mdloader_linux --first --download ${hex} --restart
+cd $MDLOADER && make && sudo build/mdloader --first --download ${hex} --restart

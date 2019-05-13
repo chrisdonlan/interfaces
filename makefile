@@ -27,10 +27,13 @@ keyboard: setup-keyboards
 
 board:
 	echo "You are now board." > /dev/null
+
 flash-board:
 	./flashboard.sh -x ${build}/${keyboard}
+
 ls-boards:
 	ls ${build}
+
 install-docker-debian:
 	sudo apt-get remove docker docker-engine docker.io containerd runc
 	sudo apt-get update
