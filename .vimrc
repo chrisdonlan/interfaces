@@ -1,3 +1,8 @@
+" some ideas:
+"   https://gist.github.com/NickLaMuro/1147370
+"   http://talks.nicklamuro.com/vim_tmux#vim-my-vimrc
+
+
 syntax on
 set keymap=dvorak
 set tabstop=2
