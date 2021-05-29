@@ -26,4 +26,8 @@ if ! $args ; then
 fi
 
 echo ${hex}
-cd $MDLOADER && make && sudo build/mdloader --first --download ${hex} --restart
+make -C $MDLOADER
+cp ${hex} $MDLOADER/build/.
+cd $MDLOADER/build
+ls
+sudo ./mdloader --first --download $(basename ${hex}) --restart

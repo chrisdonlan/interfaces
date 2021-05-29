@@ -22,8 +22,12 @@ setup-keyboards:
 	cp -r my_keyboards/* qmk_firmware/.
 
 keyboard: setup-keyboards
+ifeq ($(and $(path),$(keyboard)),)
+	@echo "usage: $@ path=<path-to-keyboard> keyboard=<keyboard-type>"
+else
 	make -C qmk_firmware ${path}:${keyboard}:all
 	cp qmk_firmware/.build/*${keyboard}.hex ${build}
+endif
 
 board:
 	echo "You are now board." > /dev/null
