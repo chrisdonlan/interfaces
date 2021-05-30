@@ -72,3 +72,16 @@ install-docker-fedora:
 docker-add-user:
 	sudo groupadd docker
 	sudo usermod -aG docker ${user}
+
+
+flash-massdrop-alt_cdonlan:
+	$(eval path=massdrop/alt)
+	$(eval keyboard=cdonlan)
+	$(MAKE) keyboard path=$(path) keyboard=$(keyboard)
+	./flashboard.sh -x .buld/$(subst /,_,$(path))_$(keyboard).hex
+
+flash-massdrop-ctrl_cdonlan:
+	$(eval path=massdrop/ctrl)
+	$(eval keyboard=cdonlan)
+	$(MAKE) keyboard path=$(path) keyboard=$(keyboard)
+	./flashboard.sh -x .build/$(subst /,_,$(path))_$(keyboard).hex
