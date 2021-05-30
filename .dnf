@@ -2,3 +2,10 @@ gcc
 g++
 make
 arm-none-eabi-gcc
+arm-none-eabi-newlib
+glibc-devel
+gcc-avr32-linux-gnu.x86_64
+arm-none-eabi-binutils-cs
+arm-none-eabi-gcc-cs
+arm-none-eabi-gcc-cs-c++
+arm-none-eabi-newlib
